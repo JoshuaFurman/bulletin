@@ -54,6 +54,7 @@ export function CustomNode({ id, data, selected }: NodeProps<CardNode>) {
       </div>
 
       <Card 
+        onDoubleClick={() => setIsEditing(true)}
         className={`w-64 border-none transition-all duration-200 bg-card text-card-foreground
           ${selected ? 'ring-4 ring-primary/20 shadow-[0_10px_25px_rgba(0,0,0,0.15)] rotate-0 scale-105 z-10' : 'shadow-[0_4px_6px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_12px_rgba(0,0,0,0.1)] hover:-translate-y-1 hover:rotate-1'}
         `}

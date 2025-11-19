@@ -114,6 +114,7 @@ export default function Board() {
           onConnect={onConnect}
           nodeTypes={nodeTypes}
           fitView
+          fitViewOptions={{ padding: 0.5, maxZoom: 1 }}
           minZoom={0.1}
           maxZoom={4}
         >
